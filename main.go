@@ -16,7 +16,6 @@ type Film struct {
 func main() {
 	fmt.Println("Go app...")
 
-	// handler function #1 - returns the index.html template, with film data
 	h1 := func(w http.ResponseWriter, r *http.Request) {
 		parsedTemplate := template.Must(template.ParseFiles("index.html"))
 		films := map[string][]Film{

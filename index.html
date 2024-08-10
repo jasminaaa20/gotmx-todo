@@ -14,7 +14,7 @@
             <h1 class="mb-4">Film List</h1>
         
             <ul class="list-group fs-5 me-5">
-                {{ range .Films }}
+                {{ range .movies }}
                     <li class="list-group-item bg-primary text-white">{{ .Title }} ({{.Year}})- {{ .Director }}</li>
                 {{ end }}
             </ul>

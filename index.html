@@ -7,5 +7,10 @@
 </head>
 <body>
     <h1>Hello World!</h1>
+
+    {{ range .movies }}
+        <p>{{ .Title }} ({{.Year}})- {{ .Director }}</p>
+    {{ end }}
+
 </body>
 </html>
